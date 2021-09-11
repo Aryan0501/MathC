@@ -46,6 +46,11 @@ public class CameraActivity extends AppCompatActivity {
         });
 
     }
+    public void nextScreen(View view)
+    {
+        Intent intent = new Intent(this,SolutionActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

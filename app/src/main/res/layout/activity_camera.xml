@@ -34,6 +34,7 @@
         android:background="#FFFFFF"
         android:text="Capture"
         android:textColor="#800000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/upload"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,11 +49,13 @@
         android:layout_marginEnd="29dp"
         android:layout_marginBottom="117dp"
         android:background="#FFFFFF"
-        android:text="Upload"
+        android:text="Solution"
         android:textColor="#800000"
+        android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/capture" />
+        app:layout_constraintTop_toBottomOf="@+id/capture"
+        android:onClick="nextScreen"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
