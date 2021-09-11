@@ -11,25 +11,48 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="409dp"
-        android:layout_height="331dp"
+        android:layout_width="410dp"
+        android:layout_height="338dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="1dp"
+        android:background="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_menu_gallery" />
 
     <Button
         android:id="@+id/capture"
-        android:layout_width="410dp"
-        android:layout_height="113dp"
-        android:layout_marginTop="180dp"
-        android:background="#800000"
+        android:layout_width="354dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="37dp"
+        android:background="#FFFFFF"
         android:text="Capture"
-        android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textColor="#800000"
+        app:layout_constraintBottom_toTopOf="@+id/upload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="354dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="117dp"
+        android:background="#FFFFFF"
+        android:text="Upload"
+        android:textColor="#800000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capture" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
